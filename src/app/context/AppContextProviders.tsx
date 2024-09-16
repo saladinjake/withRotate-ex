@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { AuthContextProvider } from "./AuthContextProvider";
 
 interface IProps {
   children: ReactNode;
@@ -11,7 +11,7 @@ interface IProps {
 const AppContextProviders = (props: IProps) => {
   return (
     <ChakraProvider>
-      <AuthProvider>{props.children}</AuthProvider>
+      <AuthContextProvider>{props.children}</AuthContextProvider>
     </ChakraProvider>
   );
 };
