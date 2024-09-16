@@ -2,7 +2,7 @@
 
 import React, { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 import Loader from "@/components/loader";
 
 const ReAuthenticateUser = () => {

@@ -2,7 +2,7 @@
 
 import { Box, Button, Flex } from "@chakra-ui/react";
 import Image from "next/image";
-import { useAuth } from "@/contexts/AuthContextProvider";
+import { useAuth } from "@/context/AuthContextProvider";
 const Auth = () => {
   const { login } = useAuth();
   const redirectUser = () => `${window.location.origin}/callback`;
