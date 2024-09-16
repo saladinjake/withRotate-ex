@@ -1,5 +1,5 @@
 import axios from "axios";
-import { UpdateProfileDataType ,UserDataType, CompanyInfoDataType}
+import { UpdateProfileDataType ,UserDataType, CompanyInfoDataType} from "./types"
 const APP_URL = "https://api.stg.withrotate.com/api";
 const axiosInstanceObject = axios.create({
   APP_URL,
