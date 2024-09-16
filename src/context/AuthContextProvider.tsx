@@ -1,9 +1,8 @@
-// context/AuthContext.tsx
-"use client";
 
+"use client";
+import axios from "axios";
 import React, {  useEffect, useState,createContext, useContext, } from "react";
 import { AuthContextType, User} from "./types"
-import axios from "axios";
 import { useRouter, usePathname } from "next/navigation";
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
@@ -15,7 +14,7 @@ export const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
   const [user, setLoginUser] = useState<User | null>(null);
   const [isFetchingUserData, setIsFetchingUserData] = useState(false);
   const [accessToken, setAuthToken] = useState<string | null>(null);
- const checkUserAuthorization = async (token: string) => {
+  const checkUserAuthorization = async (token: string) => {
     const verifyResponse = await axios.post<User>(
       `https://api.stg.withrotate.com/api/auth/verify`,
       null,

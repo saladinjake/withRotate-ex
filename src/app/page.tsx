@@ -1,6 +1,7 @@
+import { redirect } from "next/navigation";
 
 const Home = () => {
-  return (<>Do something</>)
+  redirect("/companysettings");
 };
 
 export default Home;
