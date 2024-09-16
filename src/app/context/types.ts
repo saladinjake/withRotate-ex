@@ -6,7 +6,7 @@ export type User = {
 };
 export type AuthContextType = {
   user: User | null;
-  isLoadingUser: boolean;
+  isFetchingUserData: boolean;
   accessToken: string | null;
   login: (redirectUri: string) => void;
   logout: () => void;
