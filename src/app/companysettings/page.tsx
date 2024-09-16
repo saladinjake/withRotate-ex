@@ -3,6 +3,7 @@
 import { Box, Flex, Container, Text } from "@chakra-ui/react";
 
 import { useState } from "react";
+import Account from "./components/account";
 
 
 export default function Settings() {
@@ -45,9 +46,9 @@ export default function Settings() {
             ))}
           </Flex>
 
-          {selectedTab === 1 && "Account Page"}
+          {selectedTab === 1 && <Account />}
 
-          {selectedTab === 2 && "User Mgt Page"}
+           {selectedTab === 2 && "User mgt"}
         </Container>
       </Box>
     </main>

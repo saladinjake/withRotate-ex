@@ -32,3 +32,5 @@ export const getCompanyInfoData = () => {
 export const updateProfileData = (data: UpdateProfileDataType) => {
   return axiosInstanceObject.put<CompanyInfoDataType>("/org_management/update_profile", data);
 };
+
+
