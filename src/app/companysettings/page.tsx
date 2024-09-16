@@ -1,10 +1,8 @@
 "use client";
-
 import { Box, Flex, Container, Text } from "@chakra-ui/react";
-
 import { useState } from "react";
 import Account from "./components/account";
-
+import Users from "./components/users";
 
 export default function Settings() {
   const [selectedTab, setSelectedTab] = useState(1);
@@ -48,7 +46,7 @@ export default function Settings() {
 
           {selectedTab === 1 && <Account />}
 
-           {selectedTab === 2 && "User mgt"}
+          {selectedTab === 2 && <Users />}
         </Container>
       </Box>
     </main>
