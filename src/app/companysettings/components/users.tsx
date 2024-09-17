@@ -15,7 +15,7 @@ const UserManagement = () => {
   useEffect(() => {
     (async () => {
       try {
-        const { data: response } = await getUsers();
+        const { data: response } = await getAllUsers();
         setUsers(response);
       } catch (error) {
         console.log(error);
