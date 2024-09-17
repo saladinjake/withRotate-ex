@@ -14,7 +14,6 @@ import {
 import { useAuth } from "@/context/AuthContextProvider";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/navigation";
-
 const AppMenu = () => {
   const { user, isFetchingUserData, logout } = useAuth();
   const router = useRouter();
