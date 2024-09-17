@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { getCompanyInfoData, updateProfileData } from "@/services";
 import FileUploader from "@/components/file-uploader";
-import Loader from "@/components/Loader";
+import Loader from "@/components/loader";
 
 const Account = () => {
   const [companyProfile, setCompanyProfile] = useState({
