@@ -5,7 +5,7 @@ import { formatDistanceToNow } from "date-fns";
 import Table from "@/components/table";
 import Loader from "@/components/loader";
 import { getAllUsers  } from "@/services";
-import { User} from "@/services/types"
+import { UserDataType as User} from "@/services/types"
 import Image from "next/image";
 const UserManagement = () => {
   const [users, setUsers] = useState<User[]>([]);
