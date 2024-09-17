@@ -11,7 +11,7 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "@/context/AuthContextProvider";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/navigation";
 
