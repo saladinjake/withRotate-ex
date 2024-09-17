@@ -15,7 +15,7 @@ export type UserDataType = {
   blocked: boolean;
 };
 
-type CompanyInfoDataType = {
+export type CompanyInfoDataType = {
   org_id: string;
   main_domain: string;
   unique_name: string;
