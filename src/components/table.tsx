@@ -31,7 +31,7 @@ const Icon = (props:  IconProps) => {
 
 
 const Table = <C extends ColumnDef<unknown, any>[], D extends unknown[]>(
-  props: ITablePropss<C, D>
+  props: ITableProps<C, D>
 ) => {
   const { data, columns } = props;
   const tableData = useReactTable({
