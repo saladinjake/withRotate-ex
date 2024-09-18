@@ -5,16 +5,14 @@ const axiosInstanceObject = axios.create({
   baseURL: APP_URL,
 });
 
-const getBearerConfig = (config) => {
-   const accessTokenData = localStorage.getItem("accessToken");
+
+axiosInstanceObject.interceptors.request.use(
+  (config) => {
+    const accessTokenData = localStorage.getItem("accessToken");
     if (accessTokenData) {
       config.headers["Authorization"] = `Bearer ${accessTokenData}`;
     }
     return config;
-}
-axiosInstanceObject.interceptors.request.use(
-  (config) => {
-   return getBearerConfig(config)
   },
   (error) => {
     return Promise.reject(error);
